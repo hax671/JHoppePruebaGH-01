@@ -1,33 +1,33 @@
-using UnityEngine;
+ï»¿using UnityEngine;
+using System.Collections; // <- Necesario para corrutinas
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
     private Rigidbody rb;
 
-    // Velocidades personalizadas por dirección
     public float forwardSpeed = 10f;
     public float backwardSpeed = 5f;
     public float leftSpeed = 7f;
     public float rightSpeed = 7f;
 
-    // Alternar entre modo rodado (físico) y directo
     public bool useTorque = true;
+    public float pushForce = 500f;
+    public float colorResetDelay = 0.5f; // Tiempo para volver al color original
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = false; // Permitir rotación por defecto
+        rb.freezeRotation = false;
     }
 
     void Update()
     {
-        // Cambiar modo con la tecla T
         if (Input.GetKeyDown(KeyCode.T))
         {
             useTorque = !useTorque;
-            rb.freezeRotation = !useTorque; // Evita que rote si no se usa torque
-            Debug.Log("Modo: " + (useTorque ? "Rodando (físico)" : "Movimiento directo"));
+            rb.freezeRotation = !useTorque;
+            Debug.Log("Modo: " + (useTorque ? "Rodando (fÃ­sico)" : "Movimiento directo"));
         }
     }
 
@@ -66,7 +66,40 @@ public class Player : MonoBehaviour
 
         rb.MovePosition(rb.position + move * Time.fixedDeltaTime);
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Rigidbody otherRb = collision.rigidbody;
+
+            if (otherRb != null && otherRb != rb)
+            {
+                // Aplicar fuerza de empuje
+                Vector3 direction = (collision.transform.position - transform.position).normalized;
+                otherRb.AddForce((direction + Vector3.up) * pushForce);
+
+                // Cambiar color temporalmente
+                Renderer rend = collision.gameObject.GetComponent<Renderer>();
+                if (rend != null)
+                {
+                    StartCoroutine(ChangeColorTemporarily(rend, Color.red, colorResetDelay));
+                }
+            }
+        }
+    }
+
+    IEnumerator ChangeColorTemporarily(Renderer rend, Color hitColor, float delay)
+    {
+        Color originalColor = rend.material.color;
+        rend.material.color = hitColor;
+        yield return new WaitForSeconds(delay);
+        rend.material.color = originalColor;
+    }
 }
+
+
+
 
 
 
