@@ -102,8 +102,14 @@ public class Player : MonoBehaviour
                 {
                     Vector3 spawnPos = collision.transform.position + textOffset;
                     GameObject textObj = Instantiate(floatingTextPrefab, spawnPos, Quaternion.identity);
-                    // NO cambiamos el texto, lo toma tal cual del prefab
-                    Destroy(textObj, 0.5f);
+                    Destroy(textObj, 2f);
+                }
+
+                // Registrar el golpe en el enemigo
+                Enemy enemyScript = collision.gameObject.GetComponent<Enemy>();
+                if (enemyScript != null)
+                {
+                    enemyScript.ReceiveHit();
                 }
             }
         }
@@ -117,6 +123,7 @@ public class Player : MonoBehaviour
         rend.material.color = originalColor;
     }
 }
+
 
 
 
