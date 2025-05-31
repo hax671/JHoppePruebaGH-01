@@ -1,19 +1,30 @@
 ﻿using UnityEngine;
-using System.Collections; // <- Necesario para corrutinas
+using System.Collections;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Player : MonoBehaviour
 {
     private Rigidbody rb;
 
+    [Header("Velocidad de Movimiento")]
     public float forwardSpeed = 10f;
     public float backwardSpeed = 5f;
     public float leftSpeed = 7f;
     public float rightSpeed = 7f;
 
+    [Header("Configuración de Movimiento")]
     public bool useTorque = true;
+
+    [Header("Empuje al Enemigo")]
     public float pushForce = 500f;
-    public float colorResetDelay = 0.5f; // Tiempo para volver al color original
+
+    [Header("Color al Colisionar")]
+    public float colorResetDelay = 0.5f;
+
+    [Header("Texto flotante de daño")]
+    public GameObject floatingTextPrefab; // Prefab de texto 3D con texto ya configurado
+    public Vector3 textOffset = new Vector3(0, 2f, 0); // Posición relativa al enemigo
 
     void Start()
     {
@@ -75,15 +86,24 @@ public class Player : MonoBehaviour
 
             if (otherRb != null && otherRb != rb)
             {
-                // Aplicar fuerza de empuje
+                // Empuje físico
                 Vector3 direction = (collision.transform.position - transform.position).normalized;
                 otherRb.AddForce((direction + Vector3.up) * pushForce);
 
-                // Cambiar color temporalmente
+                // Cambio temporal de color
                 Renderer rend = collision.gameObject.GetComponent<Renderer>();
                 if (rend != null)
                 {
                     StartCoroutine(ChangeColorTemporarily(rend, Color.red, colorResetDelay));
+                }
+
+                // Mostrar texto flotante encima del enemigo (usa texto del prefab)
+                if (floatingTextPrefab != null)
+                {
+                    Vector3 spawnPos = collision.transform.position + textOffset;
+                    GameObject textObj = Instantiate(floatingTextPrefab, spawnPos, Quaternion.identity);
+                    // NO cambiamos el texto, lo toma tal cual del prefab
+                    Destroy(textObj, 0.5f);
                 }
             }
         }
@@ -97,6 +117,10 @@ public class Player : MonoBehaviour
         rend.material.color = originalColor;
     }
 }
+
+
+
+
 
 
 

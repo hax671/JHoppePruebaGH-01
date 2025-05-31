@@ -248,6 +248,8 @@ MonoBehaviour:
   useTorque: 1
   pushForce: 225
   colorResetDelay: 0.2
+  floatingTextPrefab: {fileID: 5209479814268326178, guid: d308dd39e2596974bb372d26971b2411, type: 3}
+  textOffset: {x: 0, y: 2, z: 0}
 --- !u!54 &110569306
 Rigidbody:
   m_ObjectHideFlags: 0
