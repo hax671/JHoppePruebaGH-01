@@ -9,11 +9,11 @@ public class RobotControlador : MonoBehaviour
         animator.SetBool("Reproducir", false); // Asegura que empieza detenido
     }
 
-    public void OnMouseDown()
+    public void BotonEncendido()
     {
          if (animator == null) return;
 
-        // Alternar el estado de "Reproducir"
+        // Alterna el estado de "Reproducir"
         bool actual = animator.GetBool("Reproducir");
         animator.SetBool("Reproducir", !actual);
     }
