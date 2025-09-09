@@ -638,13 +638,10 @@ MonoBehaviour:
     enabled: 1
   forceRemoveInternetPermission: 0
   symmetricProjection: 0
-  foveatedRenderingApi: 0
   systemSplashScreen: {fileID: 0}
   optimizeBufferDiscards: 1
   lateLatchingMode: 0
   lateLatchingDebug: 0
-  optimizeMultiviewRenderRegions: 0
-  spacewarpMotionVectorTextureFormat: 0
 --- !u!114 &1696844841668300737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,11 +806,7 @@ MonoBehaviour:
   - {fileID: -898126600402477893}
   - {fileID: -968329938880934992}
   m_renderMode: 1
-  m_autoColorSubmissionMode: 1
-  m_colorSubmissionModes:
-    m_List: 00000000
   m_depthSubmissionMode: 0
-  m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
 --- !u!114 &4053234079010996034
@@ -1173,8 +1166,6 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: 
   features:
-  - {fileID: -438575872960314144}
-  - {fileID: 2403180696461900348}
   - {fileID: 8814824226528858936}
   - {fileID: -3812659282748228610}
   - {fileID: 4053234079010996034}
@@ -1194,10 +1185,6 @@ MonoBehaviour:
   - {fileID: 8254171408860457463}
   - {fileID: -5969629573410488993}
   m_renderMode: 1
-  m_autoColorSubmissionMode: 1
-  m_colorSubmissionModes:
-    m_List: 00000000
   m_depthSubmissionMode: 0
-  m_spacewarpMotionVectorTextureFormat: 0
   m_optimizeBufferDiscards: 0
   m_symmetricProjection: 0
