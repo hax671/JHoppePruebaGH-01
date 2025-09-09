@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControls",
+    "name": "XRControls",
     "maps": [
         {
             "name": "Gameplay",
@@ -19,7 +19,7 @@
                 {
                     "name": "",
                     "id": "1262fc77-d106-47f3-8f6c-1c7179e6c0e2",
-                    "path": "<Keyboard>/b",
+                    "path": "<XRController>{RightHand}/{PrimaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
