@@ -44,6 +44,15 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleMovement"",
+                    ""type"": ""Button"",
+                    ""id"": ""03b2ace5-34eb-4b8d-8a00-a27fd8e1eeea"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -68,6 +77,17 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
                     ""action"": ""Dash"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ae31e1af-aff4-4c75-bf82-63848ffd71c7"",
+                    ""path"": ""*/{Primary2DAxisClick}"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleMovement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -78,6 +98,7 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Dash = m_Gameplay.FindAction("Dash", throwIfNotFound: true);
+        m_Gameplay_ToggleMovement = m_Gameplay.FindAction("ToggleMovement", throwIfNotFound: true);
     }
 
     ~@XRControls()
@@ -146,12 +167,14 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
     private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Dash;
+    private readonly InputAction m_Gameplay_ToggleMovement;
     public struct GameplayActions
     {
         private @XRControls m_Wrapper;
         public GameplayActions(@XRControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Dash => m_Wrapper.m_Gameplay_Dash;
+        public InputAction @ToggleMovement => m_Wrapper.m_Gameplay_ToggleMovement;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -167,6 +190,9 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
             @Dash.started += instance.OnDash;
             @Dash.performed += instance.OnDash;
             @Dash.canceled += instance.OnDash;
+            @ToggleMovement.started += instance.OnToggleMovement;
+            @ToggleMovement.performed += instance.OnToggleMovement;
+            @ToggleMovement.canceled += instance.OnToggleMovement;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -177,6 +203,9 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
             @Dash.started -= instance.OnDash;
             @Dash.performed -= instance.OnDash;
             @Dash.canceled -= instance.OnDash;
+            @ToggleMovement.started -= instance.OnToggleMovement;
+            @ToggleMovement.performed -= instance.OnToggleMovement;
+            @ToggleMovement.canceled -= instance.OnToggleMovement;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -198,5 +227,6 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
     {
         void OnJump(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnToggleMovement(InputAction.CallbackContext context);
     }
 }

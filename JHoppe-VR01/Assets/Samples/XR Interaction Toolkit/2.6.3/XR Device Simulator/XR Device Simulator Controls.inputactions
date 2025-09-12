@@ -198,7 +198,7 @@
                     "name": "Toggle Cursor Lock",
                     "type": "Button",
                     "id": "9bd36ab1-f676-4ff4-8a4d-ba0c6fb36268",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
