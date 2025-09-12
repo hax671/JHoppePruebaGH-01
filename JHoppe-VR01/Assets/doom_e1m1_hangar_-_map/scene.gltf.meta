@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 80eead788cce8324488c2f170f9043f2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 715df9372183c47e389bb6e19fbc3b52, type: 3}
+  editorImportSettings:
+    generateSecondaryUVSet: 0
+  importSettings:
+    nodeNameMethod: 1
+    animationMethod: 2
+    generateMipMaps: 1
+    texturesReadable: 0
+    defaultMinFilterMode: 9729
+    defaultMagFilterMode: 9729
+    anisotropicFilterLevel: 1
+  instantiationSettings:
+    mask: -1
+    layer: 0
+    skinUpdateWhenOffscreen: 1
+    lightIntensityFactor: 1
+    sceneObjectCreation: 2
+  assetDependencies:
+  - type: 0
+    originalUri: Assets\doom_e1m1_hangar_-_map\scene.bin
+    assetPath: Assets\doom_e1m1_hangar_-_map\scene.bin
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BIGDOOR2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BIGDOOR2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BIGDOOR4_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BIGDOOR4_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BRNBIGC_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BRNBIGC_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BRNBIGL_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BRNBIGL_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BRNBIGR_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BRNBIGR_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BROWN1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BROWN1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BROWN144_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BROWN144_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BROWN96_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BROWN96_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\BROWNGRN_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\BROWNGRN_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\CEIL3_5_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\CEIL3_5_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\CEIL5_1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\CEIL5_1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\CEIL5_2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\CEIL5_2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\COMPSPAN_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\COMPSPAN_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\COMPTALL_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\COMPTALL_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\COMPTILE_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\COMPTILE_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\COMPUTE2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\COMPUTE2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\COMPUTE3_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\COMPUTE3_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\DOOR3_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\DOOR3_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\DOORSTOP_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\DOORSTOP_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\DOORTRAK_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\DOORTRAK_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\EXITDOOR_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\EXITDOOR_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\EXITSIGN_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\EXITSIGN_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLAT14_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLAT14_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLAT18_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLAT18_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLAT20_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLAT20_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLAT23_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLAT23_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLAT5_5_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLAT5_5_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR1_1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR1_1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR4_8_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR4_8_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR5_1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR5_1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR5_2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR5_2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR6_2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR6_2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR7_1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR7_1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\FLOOR7_2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\FLOOR7_2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\F_SKY1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\F_SKY1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\LITE3_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\LITE3_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\NUKAGE3_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\NUKAGE3_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\NUKE24_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\NUKE24_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\PLANET1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\PLANET1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\SLADWALL_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\SLADWALL_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STARG3_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STARG3_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STARGR1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STARGR1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STARTAN1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STARTAN1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STARTAN3_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STARTAN3_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STEP1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STEP1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STEP2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STEP2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\STEP6_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\STEP6_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\SUPPORT2_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\SUPPORT2_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\SW1COMP_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\SW1COMP_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\SW1STRTN_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\SW1STRTN_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\TEKWALL1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\TEKWALL1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\TEKWALL4_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\TEKWALL4_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_1_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_1_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_4_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_4_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_5_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_5_baseColor.png
+  - type: 1
+    originalUri: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_6_baseColor.png
+    assetPath: Assets\doom_e1m1_hangar_-_map\textures\TLITE6_6_baseColor.png
+  reportItems: []
