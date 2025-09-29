@@ -81,7 +81,7 @@ public partial class @XRControls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""ae31e1af-aff4-4c75-bf82-63848ffd71c7"",
-                    ""path"": ""*/{Primary2DAxisClick}"",
+                    ""path"": ""<XRController>{LeftHand}/{TriggerButton}"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
