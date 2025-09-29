@@ -1,0 +1,11 @@
+Model Information:
+* title:	Hex Pistol
+* source:	https://sketchfab.com/3d-models/hex-pistol-3307beaea0ed4bd3bbc590ccee14c9eb
+* author:	wastehound (https://sketchfab.com/wastehound)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Hex Pistol" (https://sketchfab.com/3d-models/hex-pistol-3307beaea0ed4bd3bbc590ccee14c9eb) by wastehound (https://sketchfab.com/wastehound) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
