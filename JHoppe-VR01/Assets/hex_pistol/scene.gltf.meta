@@ -26,18 +26,18 @@ ScriptedImporter:
     sceneObjectCreation: 2
   assetDependencies:
   - type: 0
-    originalUri: Assets\Scripts\hex_pistol\scene.bin
-    assetPath: Assets\Scripts\hex_pistol\scene.bin
+    originalUri: Assets\hex_pistol\scene.bin
+    assetPath: Assets\hex_pistol\scene.bin
   - type: 1
-    originalUri: Assets\Scripts\hex_pistol\textures\Material_104_baseColor.png
-    assetPath: Assets\Scripts\hex_pistol\textures\Material_104_baseColor.png
+    originalUri: Assets\hex_pistol\textures\Material_104_baseColor.png
+    assetPath: Assets\hex_pistol\textures\Material_104_baseColor.png
   - type: 1
-    originalUri: Assets\Scripts\hex_pistol\textures\Material_104_metallicRoughness.png
-    assetPath: Assets\Scripts\hex_pistol\textures\Material_104_metallicRoughness.png
+    originalUri: Assets\hex_pistol\textures\Material_104_metallicRoughness.png
+    assetPath: Assets\hex_pistol\textures\Material_104_metallicRoughness.png
   - type: 1
-    originalUri: Assets\Scripts\hex_pistol\textures\Material_104_normal.png
-    assetPath: Assets\Scripts\hex_pistol\textures\Material_104_normal.png
+    originalUri: Assets\hex_pistol\textures\Material_104_normal.png
+    assetPath: Assets\hex_pistol\textures\Material_104_normal.png
   - type: 1
-    originalUri: Assets\Scripts\hex_pistol\textures\Material_48_emissive.png
-    assetPath: Assets\Scripts\hex_pistol\textures\Material_48_emissive.png
+    originalUri: Assets\hex_pistol\textures\Material_48_emissive.png
+    assetPath: Assets\hex_pistol\textures\Material_48_emissive.png
   reportItems: []
